@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Input Fields</title>
+	<style type="text/css">
+		*{
+			background-color: #ccc;
+		    font-family: sans-serif;
+		}
+		body{
+			margin: 0 auto;
+		    font-size: 16px;
+	        line-height: 1.5;
+            padding: 0 30px;
+            text-align: center;
+		}
+		h1{
+			font-weight: 600;
+			text-align: center;
+			text-decoration: underline;
+    		text-transform: uppercase;
+		}
+        .input, #carName{
+            height: 30px;
+            width: 300px;
+            margin-bottom: 10px
+        }
+
+	</style>
+</head>
+<body>
+	<h1>Taking Input from the user</h1>
+    <div>
+        <input class="input" type="text" placeholder="Enter UserName" id="username">
+    </div>
+    <div>
+        <input class="input" type="password" placeholder="Enter password" id="password">
+    </div>
+        <button onclick="submit()">SUBMIT</button>
+    </div>
+
+    <div>
+        <h1>Taking Input from the user | Radio Buttons</h1>
+        <input type="radio" name="G1" value="option 1" id="option1"> Option 1 <br>
+        <input type="radio" name="G1" value="option 2" id="option2"> Option 2 <br>
+        <button onclick="submitBtn()">SUBMIT</button>
+    </div> 
+
+    <div>
+        <h1>Taking Input from the user | Select Box</h1>
+        <select name="dropdown" id="carName">
+            <option value="BMW">BMW</option>
+            <option value="swift">Swift</option>
+            <option value="Audi">Audi</option>
+            <option value="Mercedes">Mercedes</option>
+        </select>
+        <button onclick="submitcar()">SUBMIT</button>
+    </div> 
+</body>
+<script type="text/javascript" src="InputFields.js"></script>
+</html>
