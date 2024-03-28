@@ -48,13 +48,22 @@
 // }
 
 // practice question 2 - 
-let gameNum = 30;
-let guessNum = prompt("Guess an Game number");
-for(let i=0; guessNum != gameNum; i++){
-    guessNum = prompt("Wrong guess, Guess again");
-}
-
-// while(guessNum != gameNum){
+// let gameNum = 30;
+// let guessNum = prompt("Guess an Game number");
+// for(let i=0; guessNum != gameNum; i++){
 //     guessNum = prompt("Wrong guess, Guess again");
 // }
-alert("congractulations, your guess is right", guessNum);
+// alert("congractulations, your guess is right", guessNum);
+
+// practice questions 3 - Given a string change the every second letter to an uppercase ‘Z’. Assume there are no space.
+
+let str1 = "javascript";
+let newStr = "";  
+for (let j=0; j<str1.length; j++){
+    if((j+1)%2 === 0){
+        newStr += str1[j].toLocaleUpperCase();
+    } else {
+        newStr += str1[j];
+    }
+}
+console.log(newStr);
