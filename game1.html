@@ -17,37 +17,38 @@
     <div class="container mt-5">
         <div class="row">
             <div class="offset-lg-3 col-lg-2">
-                <div class="game bg-info">
+                <div class="game bg-info" id="rock">
                     <p>ROCK</p>
                 </div>
             </div>
             <div class="col-lg-2">
-                <div class="game bg-warning">
+                <div class="game bg-warning" id="paper">
                     <p>PAPER</p>
                 </div>
             </div>
             <div class="col-lg-2">
-                <div class="game bg-danger">
+                <div class="game bg-danger" id="scissors">
                     <p>SICCORS</p>
                 </div>
             </div>
         </div>
         <div class="score-board">
             <div class="score bg-primary">
-                <p class="mb-0">0</p>
+                <p class="mb-0 user-score">0</p>
                 <p class="mb-0">You</p>
             </div>
             <div class="score bg-secondary">
-                <p class="mb-0">0</p>
+                <p class="mb-0 comp-score">0</p>
                 <p class="mb-0">computer user</p>
             </div>
         </div>
 
-        <div class="msg-container">
-            <p class="mb-0">Play your move </p>
+        <div class="msg-container offset-lg-4 col-lg-4">
+            <p class="mb-0 game-status">Play your move </p>
         </div>
     </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src = "game1.js"></script>
 </body>
 </html>

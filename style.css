@@ -8,6 +8,11 @@
     display: flex;
     align-items: center;
     font-size: 30px;
+    cursor: pointer; 
+    opacity: 0.5;
+}
+.game:hover{
+    opacity: 1;
 }
 .score-board {
     text-align: center;
@@ -34,4 +39,5 @@
     text-transform: uppercase;
     font-weight: 500;
     padding: 15px;
+    border-radius: 47px;
 }
