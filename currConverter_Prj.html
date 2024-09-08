@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currConverter_Prj.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Currency Converter</h2>
+        <form action="">
+            <div class="amount mb-15">
+                <label for="amount">Enter Amount</label>
+                <input type="text" value="1" class="mb-5" />
+            </div>
+            <div class="dropdown mb-15">
+                <div class="from">
+                    <p>From</p>
+                    <select name="from" class="select-container mb-5"></select>
+                </div>
+                <div class="icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                <div class="to">
+                    <p>To</p>
+                    <select name="to" class="select-container mb-5"></select>
+                </div>
+            </div>
+            <div class="msg mb-15">1 USD = 80 INR</div>
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
+    <script src="code.js"></script>
+    <script src="currConverter_Prj.js"></script>
+</body>
+</html>
