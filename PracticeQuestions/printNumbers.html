@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS practice questions</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // #1: Print numbers from 1 to 10
+    for(let i=1; i<=10; i++){
+        console.log("print numbers form 1 to 10", i);
+        document.write("print numbers form 1 to 10", i)
+    }
+
+    // #2: Print the odd numbers less than 100
+    for(let j = 0; j <= 100; j++){
+        if(j % 2 !== 0){
+            console.log("print odd numbers ", j);
+        }
+    }
+
+    // #3: Print the multiplication table with 7
+    for(let k = 0; k <= 10; k++){
+        let table = k * 7;
+        console.log(`7 * ${k} = ${table}`);
+    }
+
+    // #4: Print all the multiplication tables with numbers from 1 to 10
+    for (let l = 1; l <= 10; l++){
+        for (let m = 1; m <= 10; m++){
+            let multiplyTables = l * m;
+            console.log(`${l} * ${m} = ${multiplyTables}`)
+        }
+    }
+
+    // #5: Calculate the sum of numbers from 1 to 10
+    let sum = 0;
+    for (let a = 1; a <= 10; a++){
+        sum += a;
+    }
+    console.log(`print sum -> ${sum}`) 
+
+    // #6: Calculate 10!
+    let factTen = 1;
+    for(let b = 1; b <= 10; b++){
+        factTen *= b;
+        console.log(`Factorial of 10 is ${factTen}`);
+    }
+
+    // #7: Calculate the sum of odd numbers greater than 10 and less than 30
+    for(let c = 0; c <= 30; c++){
+        if(c % 2 !== 0 && c > 10){
+            console.log("the sum of odd numbers greater than 10 and less than 30", c);
+        }
+    }
+
+    // #8: Create a function that will convert from Celsius to Fahrenheit
+    function celsiusToFahrenheit(n){
+        var fahrenheit = n * 1.8 + 32;
+        return fahrenheit;
+    }
+    var celsiusVal = celsiusToFahrenheit(20)
+    console.log("convert from Celsius to Fahrenheit", celsiusVal)
+
+    // #9: Create a function that will convert from Fahrenheit to Celsius
+    function fahrenheitToCelsius(n){
+        var celsius = (n - 32) * 1.8;
+        return celsius;
+    }
+    var fahrenheitVal = fahrenheitToCelsius(54);
+    console.log("convert from Fahrenheit to Celsius", fahrenheitVal);
+
+    // #10: Calculate the sum of numbers in an array of numbers
+    function sumArray (num){
+        let sum = 0;
+        for (let d = 0; d < num.length; d++){
+            sum += num[d];
+        }
+        // return sum; // to cal sum
+        return sum / num.length;  // to cal avg of numbers
+    }
+
+    let num = [2, 3, -1, 5, 7, 9, 10, 25, 95];
+    let arr = sumArray(num);
+    console.log(arr)
+
+    // #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
+    function getPositiveNum(arr1){
+        // let arr2 = []
+        // for(let i = 0; i < arr1.length; i++){
+        //     if(arr1[i] >= 0){
+        //         arr2.push(arr1[i])
+        //     }
+        // }
+        // return arr2;
+        return arr1.filter(el => el >= 0);
+    }
+
+    let arr1= [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+    let arr2 = getPositiveNum(arr1);
+    console.log(arr2)
+
+</script>
+
+</html>
+

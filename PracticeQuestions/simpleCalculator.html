@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        body {
+            font-family: "Open Sans", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #3b4664;
+            color: #fff;
+        }
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        main.calculator {
+            width: 70vh;
+        }
+        .inner-main-div {
+            background: #252c44;
+            border-radius: 8px;
+            padding: 18px;
+        }
+        .heading-div{
+            background: #1c2440;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 15px;
+            text-align: right;
+            font-size: 30px;
+            font-weight: 600;
+            height: 8vh;
+            line-height: 0;
+        }
+        .calculator .numberBtns {
+            width: 14vh;
+            padding: 12px 10px;
+            border-radius: 6px;
+            box-shadow: 1px 3px 0px 0px #e0caca;
+            border: 0;
+            margin: 8px 6px;
+            font-size: 19px;
+            font-weight: 600;
+            color: #666568;
+            height: 7.5vh;
+            font-family: "Open Sans", sans-serif;
+            line-height: 0;
+        }
+        .calculator .numberBtns.specialBtns{
+            font-size: 15px;
+            color: #fff;
+            background: #545454;
+            box-shadow: 1px 3px 0px 0px #8c8b8c;
+        }
+        .calculator .numberBtns.equalBtn {
+            background: #d67e39;
+            color: #fff;
+            box-shadow: 1px 3px 0px 0px #fcc295;
+        }
+    </style>
+</head>
+<body>
+    <main class="calculator">
+        <!-- <h2>Digital Calculator</h2> -->
+        <div class="heading-div">
+            <p>0.00</p>
+        </div>
+        <div class="inner-main-div">
+            <div style="text-align: right;">
+                <button class="numberBtns specialBtns">RESET</button>
+                <button class="numberBtns equalBtn">=</button>
+            </div>
+            <div>
+                <button class="numberBtns">7</button>
+                <button class="numberBtns">8</button>
+                <button class="numberBtns">9</button>
+                <button class="numberBtns specialBtns">DEL</button>
+            </div>
+            <div>
+                <button class="numberBtns">4</button>
+                <button class="numberBtns">5</button>
+                <button class="numberBtns">6</button>
+                <button class="numberBtns">+</button>
+            </div>
+            <div>
+                <button class="numberBtns">1</button>
+                <button class="numberBtns">2</button>
+                <button class="numberBtns">3</button>
+                <button class="numberBtns">-</button>
+            </div>
+            <div>
+                <button class="numberBtns">.</button>
+                <button class="numberBtns">0</button>
+                <button class="numberBtns">/</button>
+                <button class="numberBtns">*</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
